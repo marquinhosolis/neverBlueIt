@@ -1,4 +1,4 @@
-# Never Blur It
+# Never Blue It
 
 Different Perspective - <a href="https://dppad.com/"> dppad.com</a>
 
