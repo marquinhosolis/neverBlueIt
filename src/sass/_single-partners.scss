@@ -1,0 +1,181 @@
+// .singlePartnerCoverAppend{
+//     background: red;
+//     height: 100%;
+// }
+
+.singlePartnerCoverImage{
+    position: relative;
+    &:before{
+        position: absolute;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 50px;
+        background: #645661;
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+        @media(min-width:768px){
+            height: 100%;
+            width: 50px;
+        }
+    }
+}
+.singlePartnerIntroText{
+    padding: 30px 0;
+    background-color: #ececec;
+    .container{
+        .singlePartnerIntroTextPart{
+            font-size: 15px;
+            h2{
+                margin-top: 0;
+                font-family: $aglet;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 1.2;
+                @media(min-width:768px){
+                    font-size: 32px;
+                }
+            }
+            h3{
+                font-family: $aglet;
+                font-weight: 500;
+                font-size: 24px;
+                @media(min-width:768px){
+                    font-size: 26px;
+                }
+            }
+            p{
+                margin-top: 0;
+            }
+            ul{
+                li{
+                    &:before{
+                        color: #71a599;
+                    }
+                }
+            }
+            @media(min-width: 768px){
+                width: 45%;
+            }
+        }
+        .singlePartnerIntroTextCta{
+            width: 100%;
+            margin: 30px 0;
+            text-align: center;
+            .btn-orange{
+                padding: 10px 15px;
+                font-family: $aglet;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 18px;
+            }
+        }
+        @media(min-width: 768px){
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.singlePartnerWhyChoose{
+    padding: 50px 0;
+    .container{
+        @media(min-width: 768px){
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .singlePartnerWhyChooseImage{
+        position: relative;
+        text-align: center;
+        img{
+            width: 90%;
+            position: relative;
+            z-index: 0;
+        }
+        .logo-symbol{
+            width: 40%;
+            position: absolute;
+            z-index: 1;
+            bottom: -20px;
+            left: -20px;
+            @media(min-width: 1200px){
+                bottom: -50px;
+                left: -50px;
+            }
+        }
+        @media(min-width: 768px){
+            width: 33%;
+        }
+    }
+    .singlePartnerWhyChooseText{
+        margin-top: 50px;
+        h2{            
+            color: #645661;
+            font-family: $aglet;
+            font-size: 24px;
+            font-weight: 400;
+            @media(min-width: 768px){
+                font-size: 32px;
+            }
+        }
+        .singlePartnerWhyChooseTextCopy{
+            max-width: 500px;
+            margin: auto;
+            color: #645661;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        @media(min-width: 768px){
+            width: 60%;
+            margin-top: 0;
+        }
+    }
+    @media(min-width: 768px){
+        padding: 80px 0;
+    }
+}
+
+.singlePartnerCta{
+    padding: 50px 0;
+    background: no-repeat center center #645661;
+    background-size: cover;
+    color: #fff;
+    .container{
+        @media(min-width: 768px){
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    .singlePartnerCtaImage{
+        text-align: center;
+        @media(min-width: 768px){
+            width: 30%;
+        }
+    }
+    .singlePartnerCtaText{
+        max-width: 550px;
+        h2{
+            font-family: $aglet;
+            font-size: 24px;
+            font-weight: 400;
+            @media(min-width: 768px){
+                font-size: 36px;
+            }
+        }
+        .btn-orange{
+            padding: 10px 15px;
+            font-size: 18px;;
+            font-family: $aglet;
+            font-style: italic;
+            font-weight: 400;
+        }
+        @media(min-width: 768px){
+            width: 70%;
+        }
+    }
+    
+}

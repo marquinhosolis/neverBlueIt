@@ -1,0 +1,15 @@
+.pageTerms{
+    h1{
+        font-family: $aglet;
+        color: #645661;
+        font-size: 24px;
+        font-weight: 400;;
+        @media(min-width: 768px){
+            font-size: 36px;
+        }
+    }
+    p{
+        font-size: 14px;
+        color: #484848;
+    }
+}

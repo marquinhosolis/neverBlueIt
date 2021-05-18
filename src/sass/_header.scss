@@ -1,0 +1,30 @@
+@import 'menu';
+
+header{
+    transition: .25s ease-in-out;
+    background: #fff;
+    border-bottom: solid 1px #ececec;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .logoHeader{
+        transition: .25s ease-in-out;
+        max-width: 110px;
+        img{
+            display: block;
+        }
+        @media(min-width:1200px){
+            max-width: 100%;
+        }
+    }
+    @media(min-width:1200px){
+        justify-content: space-around;
+    }
+}

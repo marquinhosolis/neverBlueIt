@@ -1,0 +1,117 @@
+ footer{
+    position: relative;
+    padding: 50px 0;
+    background-color: #e9e7e9;
+    color: #645661;
+    text-align: center;
+    .container{
+        @media(min-width:768px){
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    .footerLinks{
+        li{
+            &:before{
+                display: none;
+            }
+            a{
+                text-decoration: none;
+                font-family: $aglet;
+                color: #645661;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        @media(min-width:768px){
+            order: 2
+        }
+    }
+    .footerNewsletter{
+        margin-bottom: 30px;
+        color: #645661;
+        font-family: $aglet;
+        font-size: 16px;
+        font-weight: 400;
+        p{
+            margin-bottom: 0;
+        }
+        .footerFormWrapper{
+            margin: 10px 0;
+            position: relative;
+            input{
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #645661;
+                background: none;
+                padding: 7px;
+                font-family: $open;
+                color: #919091;
+                &::placeholder{
+                    color: #919091;
+                    opacity: 1;
+                }
+            }
+            button{
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                right: 10px;
+                background: none;
+                padding: 0;
+                border: 0;
+                color: #f79943;
+                font-size: 20px; 
+                cursor: pointer;
+            }
+        }
+        @media(min-width:768px){
+            order: 4;
+        }
+    }
+    address{
+        i{
+            color: #f79339;
+        }
+        a{
+            color: #645661;
+            font-size: 16px;
+            font-family: $aglet;
+            text-decoration: none;
+            font-style: normal;
+        }
+        @media(min-width:768px){
+            width: 100%;
+            margin: 20px 0;
+            order: 5;
+        }
+    }
+    .footerSocial{
+        margin-bottom: 20px;
+        p{
+            margin-bottom: 0;
+            font-family: $aglet;
+            font-size: 20px;
+        }
+        a{
+            color: #f79339;
+            font-size: 20px;
+            padding: 0 3px;
+            &:hover{
+                color: #7c717a ;
+            }
+        }
+        @media(min-width:768px){
+            order: 3;
+        }
+    }
+    .logoDP{
+        @media(min-width:1024px){
+            position: absolute;
+            right: 20px;
+            bottom: 20px
+        }
+    }
+ }

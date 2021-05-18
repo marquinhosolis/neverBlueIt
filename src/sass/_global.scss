@@ -1,0 +1,41 @@
+@import 'variables';
+
+body{
+    padding-top: 50px;
+    font-family: $aglet; 
+    font-family: $open; 
+    color: #645661;
+    line-height: 1.5; 
+    @media(min-width:1200px){
+        padding-top: 85px;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.titleAnimated{
+    text-align: center;
+    &:after{
+        display: block;
+        content: url('../images/underline.png');
+        
+        border-radius: 2px;
+        margin: 15px auto;
+        margin-top: 0;
+
+    }
+}
+
+.logo-symbol{
+    @extend .swing-in-right-bck;
+}
+
+.titleAnimated{
+    &:after{
+        @extend .scale-in-hor-left;
+    }
+}

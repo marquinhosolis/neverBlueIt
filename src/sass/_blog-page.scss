@@ -1,0 +1,172 @@
+.coverBlog{
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    h1{
+        width: 100%;
+        font-family: $aglet;
+        font-weight: 400;
+        font-size: 36px;
+        @media(min-width:768px){
+            width: 30%;
+            order: 2;
+        }
+    }
+    .blogFilter{
+        position: relative;
+        width: 48%;
+        font-family: $aglet;
+        font-size: 14px;
+        color: #645661;
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        i{
+            color: #f79339;
+        }
+        ul{
+            position: absolute;
+            z-index: 1;
+            display: none;
+            width: 100%;
+            background: #fff;;
+            border: solid 1px #ccc;
+            padding: 20px 10px;
+            border-radius: 5px;
+            li{
+                a{
+                    display: block;
+                    padding: 5px;
+                }
+                &:before{
+                    display: none;
+                }
+            }
+        }
+        @media(min-width:768px){
+            width: 20%;
+            order: 1;
+        }
+    }
+    .blogSearch{
+        position: relative;
+        width: 48%;
+        input{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #acacac;
+            border-radius: 5px;
+            font-family: $open;
+        }
+        button{
+            position: absolute;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: none;
+            padding: 0;
+            border: 0;
+            color: #f79339;
+            font-size: 20px;
+        }
+        @media(min-width:768px){
+            width: 20%;
+            order: 3;
+        }
+    }
+}
+
+.searchResult{
+    text-align: center;
+    h2{
+        font-weight: 400;
+        span{
+            color: #f79339;
+            font-family: $aglet;
+            font-size: 24px;
+        }
+    }
+}
+
+.blogArticles{
+    background: none;
+    text-align: center;
+    padding-bottom: 60px;
+    .homeBlogArticles{
+        text-align: left;
+        article{
+            position: relative;
+            margin: 20px 0;
+            .homeBlogArticleImage{
+                @include aspect-ratio(320, 200);
+                background-size: cover;
+                background-position: center center;
+                width: 90%;
+                border-radius: 4px;
+            }
+            .homeBlogArticleText{
+                position: relative;
+                top: -30px;
+                margin-left: auto;
+                width: 90%;  
+                padding: 20px;              
+                border-radius: 4px;
+                background-color: #645661;
+                opacity: 0.91;
+                color: #fff;
+                .date{
+                    font-family: $aglet;
+                    font-style: italic;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                h3{
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    font-family: $aglet;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                p{
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 11px;
+                    line-height: 15.49px;
+                }
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: $aglet;
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 14px;
+                    i{
+                        margin-left: 5px;
+                    }
+                }
+            }
+            @media(min-width: 768px){
+                width: 30%;
+            }
+            &:nth-child(even){
+                .homeBlogArticleText{
+                    background: #f79339;
+                }
+            }
+        }
+        @media(min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    .btn-orange{
+        display: none;
+        padding: 10px 15px;
+    }
+}

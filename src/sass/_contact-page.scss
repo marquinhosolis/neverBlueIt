@@ -1,0 +1,148 @@
+.contactPage{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    .container{
+        .contactPageText{
+            h1{
+                color: #645661;
+                font-family: $aglet;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 1.2;
+                @media(min-width:768px){
+                    font-size: 36px;
+                }
+            }
+            p{
+                margin-top: 0;
+                font-size: 14px;;
+            }
+            .contactPageTextForm{
+                margin-bottom: 30px;
+                .form-field{
+                    margin-bottom: 15px;
+                    label{
+                        color: #8a8a8a;
+                        font-family: $aglet;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                    input{
+                        width: 100%;
+                        font-family: $open;
+                        padding: 8px;
+                        border-radius: 5px;
+                        border: 1px solid #dfdfdf;
+                        background-color: #f2f2f2;
+                    }
+                    select{
+                        font-family: $open;
+                        display: block;
+                        width: 100%;
+                        padding: 8px;
+                        border-radius: 5px;
+                        border: 1px solid #dfdfdf;
+                        background-color: #f2f2f2;
+                        appearance: none;
+                    }
+                    textarea{
+                        font-family: $open;
+                        width: 100%;
+                        padding: 8px;
+                        border-radius: 5px;
+                        border: 1px solid #dfdfdf;
+                        background-color: #f2f2f2;
+                    }
+                }
+                .selectField{
+                    position: relative;
+                    &:after{
+                        //content: 'test';
+                        position: absolute;
+                        //top: 0;
+                        pointer-events: none;
+                        bottom: 3px;
+                        margin: auto;
+                        right: 10px;
+                        display: block;
+                        font-family: FontAwesome;
+                        color: red;
+                        content: "\f0d7";
+                        font-size: 20px;
+                        color: #f79339;
+                    }
+                }
+                .frm_submit{
+                    text-align: center;
+                    button{
+                        font-family: $aglet;
+                        font-weight: 400;
+                        font-size: 18px;
+                        border: 0;
+                        font-style: italic;
+                        padding: 10px 15px;
+                    }
+                }
+                
+                @media(min-width:768px){
+                    margin-bottom: 0;
+                    .halfField{
+                       width: 48%;
+                       margin: 0 2% 15px 0;
+                       float: left;
+                    }
+                }
+            }
+            @media(min-width:768px){
+                width: 48%;
+            }
+        }
+        .contactPageImage{
+            position: relative;
+            margin-bottom: 30px;
+            img{
+                @media(min-width: 768px){
+                    width: 90%;
+                }
+            }
+            .logo-symbol{
+                max-width: 100px;
+                position: absolute;
+                bottom: -40px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                @media(min-width:768px){
+                    max-width: 150px;
+                    margin: 0;
+                    left: 0;
+                }
+                @media(min-width: 1024px){
+                    max-width: 200px;
+                    margin: 0;
+                    left: 0;
+                }
+                
+            }
+            @media(min-width:768px){
+                width: 48%;
+                text-align: right;
+            }
+        }
+        @media(min-width:768px){
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+}
+
+.careersPage{
+    .btn-orange{
+        padding: 10px 15px;
+        margin-bottom: 30px;
+        @media(min-width:768px){
+            margin-bottom: 0;
+        }
+    }
+}

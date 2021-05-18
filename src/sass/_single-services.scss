@@ -1,0 +1,432 @@
+.singleServicesCover{
+    position: relative;
+    //z-index: 9;
+   
+    .coverAboutUsText{
+        //padding: 30px 20px;
+        //overflow: none;
+        background: #7c717a !important;
+        p{
+            font-size: 18px;
+            max-width: 100%;
+        }
+        
+        @media(min-width: 1024px){
+            padding: 60px 40px;
+        }
+        @media(min-width: 1200px){
+            padding: 60px 40px;
+        }
+    }
+    .logo-symbol{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 90px;
+        transform: translate(0, 50%);
+        @media(min-width: 768px){
+            max-width: 120px;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.singleServiceIntro{
+    padding: 50px 0;
+    background-color: #ececec;
+    .container{
+        @media(min-width: 768px){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    .singleServiceIntroText{
+        h2{
+            color: #645661;
+            font-family: $aglet;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: left;
+            &:after{
+                margin: 15px;
+            }
+            @media(min-width: 768px){
+                font-size: 36px;
+                text-align: center;
+                &:after{
+                    margin: 15px auto;
+                }
+            }
+        }
+        @media(min-width: 768px){
+            width: 48%;
+        }
+    }
+    .singleServiceIntroImage{
+        @media(min-width: 768px){
+            width: 48%;
+        }
+    }
+    .singleServicesIntroCta{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+        .btn{
+            padding: 10px 12px;
+        }
+        @media(min-width: 768px){
+            margin-top: 50px;
+        }
+    }
+    @media(min-width: 768px){
+        padding: 80px;
+    }
+}
+
+.singleServiceMain{
+    //padding: 50px 0;
+    .singleServiceMainText{
+        padding-top: 50px;
+        h3{
+            margin-bottom: 15px;
+            font-family: $aglet;
+            font-size: 24px;
+            font-weight: 400;
+            @media(min-width: 768px){
+                font-size: 30px;
+            }
+        }
+        .singleServiceMainCopy{
+            font-size: 14px;
+            p{
+                margin-top: 0;
+            }
+            @media(min-width: 768px){
+                column-count: 2;
+                column-gap: 50px;
+            }
+        }
+        @media(min-width: 768px){
+            padding-top: 80px;
+        }
+    }
+    .singleServiceOurApproach{
+        padding: 50px 0;
+        h2{
+            color: #645661;
+            font-family: $aglet;
+            font-size: 24px;
+            font-weight: 400;
+            @media(min-width: 768px){
+                font-size: 36px;
+            }
+        }
+        .aboutOurApproachContent{
+            max-width: 650px;
+            margin: auto;
+            text-align: center;
+            .aboutOurApproachContentImage{
+                    max-width: 50%;
+                    margin: auto;
+                @media(min-width: 768px){
+                    width: 28%;
+                    max-width: 165px;
+                    margin-right: 50px;
+                }
+            }
+            .aboutOurApproachContentText{
+                @media(min-width: 768px){
+                    width: 68%;
+                }
+            }
+            @media(min-width: 768px){
+                text-align: left;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        @media(min-width: 768px){
+            padding: 80px 0;
+        }
+    }
+    .singleServiceOurApproachSliderWrapper{
+        padding-bottom: 50px;
+        .singleServiceOurApproachBoxes{
+            ul{
+                li{
+                    .singleServiceOurApproachBox{
+                        transition: all 0.25s linear;
+                        position: relative;
+                        //margin: 20px;
+                        border-radius: 7px;
+                        max-height: 310px;
+                        overflow: hidden;
+                        background-color: #645661;
+                        color: #fff;
+                        .singleServiceOurApproachBoxTitle{
+                            h3{
+                                margin: 30px 20px 10px;
+                                font-size: 24px;
+                                font-style: italic;
+                                font-weight: 400;
+                            }
+                        }
+                        .singleServiceOurApproachBoxText{
+                            margin: 10px 20px;
+                            font-size: 13px;
+                            padding-bottom: 10px;
+                        }
+                        
+                    }
+                    .singleServiceOurApproachBoxReadMore{
+                        display: none;
+                        //position: absolute;
+                        width: 100%;
+                        padding: 5px 20px;
+                        background-color: #645661;
+                        border-radius: 0 0 7px 7px;
+                        color: #ff9433;
+                        font-size: 13px;
+                        a{
+                            color: inherit;
+                            text-decoration: none;;
+                        }
+                    }  
+                    .singleServiceOurApproachBox--full{
+                        max-height: 100%;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                    @media(min-width: 768px){
+                        width: 32%;
+                    }
+                }
+                @media(min-width: 768px){
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            
+        }
+        @media(min-width: 768px){
+            padding-bottom: 80px;
+         }
+    }
+    @media(min-width: 768px){
+       // padding: 80px 0;
+    }
+}
+
+.singleProductCta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+    h2{
+        max-width: 950px;
+        margin: auto;
+        text-align: center;
+        color: #ffffff;
+        font-family: $aglet;
+        font-size: 24px;
+        font-weight: 400;
+        @media(min-width: 768px){
+            font-size: 36px;
+        }
+    }
+    @media(min-width: 768px){
+        padding: 80px 0;
+    }
+}
+
+.singleProductCtaBtn{
+    padding: 30px 0;
+    text-align: center;
+    .btn-orange{
+        padding: 10px 12px;
+    }
+    @media(min-width: 768px){
+        padding: 50px 0;
+    }
+}
+
+.recomendedLinks{
+    text-align: center;
+    padding-bottom: 80px;
+    h2{
+        margin-bottom: 0px;
+        color: #645661;
+        font-family: $aglet;
+        font-size: 24px;
+        font-weight: 400;
+        @media(min-width: 768px){
+            font-size: 32px;
+        }
+    }
+    a{
+        margin: 10px;
+        display: inline-block;
+        color: #f79339;
+        font-size: 18px;
+        text-decoration: none;
+        @media(min-width: 768px){
+            font-size: 20px;
+        }
+    }
+}
+
+
+.mainPostSectionOne{
+    padding: 80px 0;
+    background-color: #ececec;
+    h2{
+        max-width: 900px;
+        margin: auto;
+        color: #645661;
+        font-family: $aglet;
+        font-size: 24px;
+        font-weight: 400;
+        @media(min-width: 768px){
+            font-size: 36px;
+        } 
+    }
+    .mainPostSectionOneContent{
+        .mainPostSectionOneContentImage{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .logo-symbol{
+                max-width: 120px;
+                position: absolute;
+                bottom: 0; 
+                right: 0;
+                transform: translate(30%, 30%);
+                @media(min-width: 768px){
+                    max-width: 150px;
+                }
+            }
+            @media(min-width: 768px){
+                width: 45%;
+            }
+        }
+        .mainPostSectionOneContentText{
+            font-size: 14px;
+            @media(min-width: 768px){
+                width: 48%;
+            }
+        }
+        @media(min-width: 768px){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    @media(min-width: 768px){
+        padding: 80px 0;
+    }
+}
+
+.mainPostSectionTwo{
+    .mainPostSectionTwoTitle{
+        padding: 30px 0;
+        h2{
+            font-family: $aglet;
+            font-size: 24px;
+            font-weight: 400;
+            @media(min-width: 768px){
+                font-size: 36px;
+            }
+        }
+        @media(min-width: 768px){
+            padding: 50px 0;
+        }
+    }
+    .mainPostSectionTwoSplitArea{
+        .mainPostSectionTwoSplitAreaText{
+            background-color: #645661;
+            background-color: #f79339;
+            color: #fff;
+            display: flex;
+            justify-content: flex-end;
+            .mainPostSectionTwoSplitAreaTextWrapper{
+                max-width: 680px;
+                h3{
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                    font-family: $aglet;
+                    font-weight: 400;
+                    font-size: 24px;
+                    @media(min-width: 768px){
+                        font-size: 30px;
+                    }
+                }
+                h4{
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                    font-family: $aglet;
+                    font-weight: 400;
+                    font-size: 18px;
+                    @media(min-width: 768px){
+                        font-size: 22px;
+                    }
+                }
+                p{
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 14px;;
+                }
+            }
+            padding: 40px 20px;
+            @media(min-width: 768px){
+                width: 55%;
+                padding: 60px 30px;
+            }
+        }
+        .mainPostSectionTwoSplitAreaImage{
+            background: red;
+            background-position: center center;
+            background-size: cover;
+            img{
+                display: block;
+                width: 100%;
+                @media(min-width: 768px){
+                    display: none;
+                } 
+            }
+            @media(min-width: 768px){
+                width: 45%;
+            }
+        }
+        @media(min-width: 768px){
+            display: flex;
+            align-items: stretch;
+        }
+        &:nth-child(odd){
+            flex-direction: row-reverse;
+            .mainPostSectionTwoSplitAreaText{
+                justify-content: flex-start;
+            }
+        }
+        &:nth-child(3n+1){
+            .mainPostSectionTwoSplitAreaText{
+                background-color: #f79339;
+                background-color: #f36b21;
+            }
+            
+        }
+        &:nth-child(3n+2){
+            .mainPostSectionTwoSplitAreaText{
+                background-color: #f36b21;
+                background-color: #645661;
+            }
+            
+        }
+    }
+}
